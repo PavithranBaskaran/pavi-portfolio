@@ -50,13 +50,13 @@ function Home({ data }) {
                 }
               />{" "}
               
-             <a href="mailto:vktpavi@gmail.com"> <SiGmail
+            <SiGmail
                 className={`gmail`}
                 color={` ${data ? "white" : "black"} `}
                 onClick={() =>
-                  window.open("https://www.linkedin.com/in/pavithran-b-8026071a3/", "_blank")
+                  window.open("mailto:vktpavi@gmail.com", "_blank")
                 }
-              /></a>
+              />
             </div>
           </div>
           <div className="mw-50 m-auto profile col d-lg-inline d-md-none d-none  ">
