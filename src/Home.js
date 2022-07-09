@@ -1,16 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Typewriter from "typewriter-effect";
 import Profile from "./Profile";
-import Lottie from "lottie-react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 import Profile2 from "./Profile2";
 function Home({ data }) {
+  useEffect(()=>{
+    AOS.init({delay: 2000});
+  },[])
   return (
     <>
       <section className=" container " id="home">
         <div className="row row-cols-lg-2 row-cols-sm-1 mt-md-5 mt-5">
-          <div className="name fingerpaint mw-100 m-auto col m-sm-auto">
+          <div data-aos="fade-right" className="name fingerpaint mw-100 m-auto col m-sm-auto">
             <h3 className="trispace intro">Hello! 👋 My name is</h3>
             <h1 className={` ${data ? "text-light" : "text-dark"} `}>
               PAVITHRAN
@@ -59,10 +63,10 @@ function Home({ data }) {
               />
             </div>
           </div>
-          <div className="mw-50 m-auto profile col d-lg-inline d-md-none d-none  ">
+          <div data-aos="fade-left" className="mw-50 m-auto profile col d-lg-inline d-md-none d-none  ">
             <Profile />
           </div>
-          <div className="d-lg-none d-md-block profile2">
+          <div data-aos="fade-left" className="d-lg-none d-md-block profile2">
             <Profile2 />
           </div>
         </div>

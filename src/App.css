@@ -56,7 +56,7 @@ nav li {
 }
 
 #contact {
-  height: 800px;
+  height: 200px;
 }
 
 
@@ -124,6 +124,19 @@ nav li {
 .profile{
 padding: 0px;
 }
+
+/* contact */
+.contact-pill{
+  width: 20rem;
+  color: white;
+  font-weight: 500;
+}
+
+.inside{
+  background-color: whitesmoke;
+}
+
+
 @media (max-width: 991px) {
   #home {
     margin-top: 140px;
@@ -172,6 +185,12 @@ padding: 0px;
   /* skill page */
    /* skill page */
 
+   /* contact */
+   .contact-pill{
+    width: 20rem;
+  
+    font-weight: 500;
+  }
   
 }
 @media (max-width: 1230px) {

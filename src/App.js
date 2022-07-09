@@ -9,6 +9,7 @@ import Navbar from "./Navbar";
 import Home from "./Home";
 import About from "./About";
 import Skills from "./Skills";
+import Contact from "./Contact";
 
 function App() {
   const defaultOptions = {
@@ -73,23 +74,19 @@ function App() {
         <hr className=" border opacity-50 mt-5 line "/>
         </div>
         {/* Skills section */}
-        <Skills/>
+        <Skills data={display}/>
          {/* Horizontal Line */}
          <div className=" d-flex justify-content-center">
         <hr className=" border opacity-50 mt-5 line "/>
         </div>
-        <section className="" id="project">Project
-        <h1>IN PROGRESS</h1></section>
+        {/* <section className="" id="project">Project
+        <h1>IN PROGRESS</h1></section> */}
         {/* Horizontal Line */}
-        <div className=" d-flex justify-content-center">
+        {/* <div className=" d-flex justify-content-center">
         <hr className=" border opacity-50 mt-5 line "/>
-        </div>
-        <section className="" id="contact">Contact
-        <h1>IN PROGRESS</h1></section>
-        {/* Horizontal Line */}
-        <div className=" d-flex justify-content-center">
-        <hr className=" border opacity-50 mt-5 line "/>
-        </div>
+        </div> */}
+       <Contact data={display}/>
+        
       </section>
     </>
   );

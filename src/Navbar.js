@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import {VscThreeBars} from 'react-icons/vsc'
 
+
 function Navbar({data}) {
     
   
@@ -40,12 +41,14 @@ function Navbar({data}) {
               id="navbarNavAltMarkup"
             >
               <ul className={`navbar-nav  flex-lg-row flex-sm-column `}>
-                <li
+                
+                <li 
                   className={`nav-link ${
                     data ? "text-light" : "text-dark"
                   } active `}
                   aria-current="page"
-                  action="#home"
+                  href="/home"
+                  onClick={()=>window.scrollTo(0,0)}
                 >
                   Home
                 </li>
@@ -53,15 +56,17 @@ function Navbar({data}) {
                   className={`nav-link ${
                     data ? "text-light" : "text-dark"
                   } `}
-                  action="#about"
+                 href='/about'
+                 onClick={()=>window.scrollTo(0,800)}
                 >
-                  About
+                 About 
                 </li>
                 <li
                   className={`nav-link ${
                     data ? "text-light" : "text-dark"
                   } `}
                   action="#skills"
+                  onClick={()=>window.scrollTo(800,1800)}
                 >
                   Skills
                 </li>
@@ -70,6 +75,7 @@ function Navbar({data}) {
                     data ? "text-light" : "text-dark"
                   } `}
                   action="#project"
+                  onClick={()=>window.scrollTo(1800,2400)}
                 >
                   Project
                 </li>
@@ -78,6 +84,7 @@ function Navbar({data}) {
                     data ? "text-light" : "text-dark"
                   } `}
                   action="#contact"
+                  onClick={()=>window.scrollTo(2400,3700)}
                 >
                   Contact
                 </li>
