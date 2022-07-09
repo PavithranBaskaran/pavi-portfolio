@@ -1,17 +1,22 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { AiOutlineMail } from "react-icons/ai";
 import { FcPhoneAndroid } from "react-icons/fc";
 import { FaLinkedin } from "react-icons/fa";
 import { ImWhatsapp } from "react-icons/im";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 function Contact() {
+  useEffect(()=>{
+    AOS.init({delay: 800});
+  },[])
   return (
     <>
       <section className="m-lg-5 " id="contact">
         <h1 className="fingerpaint about-head">Contact me</h1>
         <div class="container-fluid px-4 mt-5">
           <div class="row gx-5 gy-4">
-            <div class="col">
-              <div
+            <div data-aos="fade-left" class="col">
+              <div 
                 style={{ backgroundColor: "#c11625" }}
                 class="contact-pill p-2 border rounded-pill d-flex align-center justify-center  border-danger"
                 onClick={() =>
@@ -28,8 +33,8 @@ function Contact() {
                 </div>
               </div>
             </div>
-            <div class="col">
-              <div
+            <div data-aos="fade-right" class="col">
+              <div 
                 style={{ backgroundColor: "#128C7E" }}
                 class="contact-pill p-2 border rounded-pill d-flex align-items-center justify-center border-success"
                 onClick={() => window.open("callto://+918778702987", "_blank")}
@@ -43,7 +48,7 @@ function Contact() {
                 </div>
               </div>
             </div>
-            <div class="col">
+            <div data-aos="fade-left" class="col">
               <div
                 style={{ backgroundColor: "#128C7E" }}
                 class="contact-pill p-2 border rounded-pill d-flex align-items-center justify-center border-success"
@@ -61,7 +66,7 @@ function Contact() {
                 </div>
               </div>
             </div>
-            <div class="col">
+            <div data-aos="fade-right" class="col">
               <div
                 style={{ backgroundColor: "#0a66c2" }}
                 class="contact-pill p-2 border rounded-pill d-flex align-items-center justify-center border-primary "

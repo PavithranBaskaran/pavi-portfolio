@@ -8,7 +8,7 @@ import { SiGmail } from "react-icons/si";
 import Profile2 from "./Profile2";
 function Home({ data }) {
   useEffect(()=>{
-    AOS.init({delay: 2000});
+    AOS.init({delay: 1500});
   },[])
   return (
     <>

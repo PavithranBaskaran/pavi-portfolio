@@ -1,5 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 function About({ data }) {
+  useEffect(()=>{
+    AOS.init({delay: 500});
+  },[])
   return (
     <>
       <section className="m-lg-5 about " id="about">
@@ -18,7 +24,7 @@ function About({ data }) {
           skills for mutual growth and benefit of company and myself.
         </p>
 
-        <ul className="list trispace">
+        <ul data-aos="zoom-in" className="list trispace">
           <li>
             <span style={{ color: "#18d26e" }}>➤ </span>
             <span style={{ fontWeight: "bold" }}>Full Name:</span> Pavithran B
