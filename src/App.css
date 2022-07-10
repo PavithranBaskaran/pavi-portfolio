@@ -135,7 +135,12 @@ padding: 0px;
 .inside{
   background-color: whitesmoke;
 }
-
+.hint {
+  font-size:20px  !important;
+}
+.hint-icon{
+  font-size: 70px;
+}
 
 @media (max-width: 991px) {
   #home {
@@ -187,11 +192,16 @@ padding: 0px;
 
    /* contact */
    .contact-pill{
-    width: 20rem;
-  
+    width: 15rem;
+    
     font-weight: 500;
   }
-  
+  .hint{
+    font-size: 15px !important;
+  }
+  .hint-icon{
+    font-size: 50px;
+  }
 }
 @media (max-width: 1230px) {
   .skill-icon{
