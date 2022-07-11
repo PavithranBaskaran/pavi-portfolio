@@ -10,13 +10,13 @@ function Navbar({data}) {
     
     <nav
           className={`navbar fixed-top navbar-expand-lg ${
-            data ? "bg-dark bg-opacity-75" : "bg-light bg-opacity-75"
+            data ? "bgColor-dark bg-opacity-75" : "bg-light bg-opacity-75"
           }`}
         >
           <div className="container-fluid">
             <a
               className={`navbar-brand ${
-                data ? "text-light" : "text-dark"
+                data ? "textColor-dark" : "text-dark"
               } fingerpaint fs-3  fs-md-6`}
               href="#"
             >
@@ -45,7 +45,7 @@ function Navbar({data}) {
                 <li 
                   className={`nav-link ${
                     data ? "text-light" : "text-dark"
-                  } active `}
+                  }  `}
                   aria-current="page"
                   href="/home"
                   onClick={()=>window.scrollTo(0,0)}

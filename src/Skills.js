@@ -15,13 +15,15 @@ import { IoLogoNpm, IoLogoGithub } from "react-icons/io";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-function Skills() {
+function Skills({ data }) {
   useEffect(()=>{
     AOS.init({delay: 800});
   },[])
   return (
     <section className="m-lg-5 " id="skills">
-    <h1 className="fingerpaint about-head">THINGS I CODE WITH</h1>
+    <h1 className={`fingerpaint about-head ${
+            data ? "textColor-dark" : ""
+          }`}>THINGS I CODE WITH</h1>
     <div className="container-fluid  ">
       <div className="row row-cols-lg-2 row-cols-sm-1 flex-lg-row flex-column ">
         <div className="col-6  ">
@@ -34,8 +36,10 @@ function Skills() {
         </div>
         <div className="col-6 section-title   ">
         <div className="pad container-fluid">
-              <h2 data-aos="fade-left" className="fingerpaint about-head text-dark">My Skills</h2>
-              <div className="skill row row-cols-3">
+              <h2 data-aos="fade-left" className={`fingerpaint about-head ${
+            data ? "textColor-dark" : "text-dark"
+          }`}>My Skills</h2>
+              <div className="skill row row-cols-3 trispace">
                 <div data-aos="flip-up"
                   className="skill-cintainer col"
                   style={{ backgroundColor: "rgb(148, 89, 21)" }}

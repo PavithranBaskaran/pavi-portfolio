@@ -34,7 +34,7 @@ function App() {
       // console.log(display);
     } else {
       style.innerText = "☀️";
-      document.body.style.backgroundColor = "#444f5a";
+      document.body.style.backgroundColor = "#22222b";
       display = true;
       setDisplay(display);
       // console.log(display);
@@ -48,8 +48,7 @@ function App() {
         <span className="d-flex justify-content-end fixed-bottom m-3 ">
           <a
             id="style"
-            href="#"
-            className={`fs-2 text-decoration-none border border rounded-circle ${
+            className={`trigger bounce-in text-decoration-none border border rounded-circle ${
               display ? "bg-light" : "bg-dark"
             }  p-0 m-0`}
             onClick={() => changeStyle()}

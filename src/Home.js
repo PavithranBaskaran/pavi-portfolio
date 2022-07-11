@@ -15,8 +15,8 @@ function Home({ data }) {
       <section className=" container " id="home">
         <div className="row row-cols-lg-2 row-cols-sm-1 mt-md-5 mt-5">
           <div data-aos="fade-right" className="name fingerpaint mw-100 m-auto col m-sm-auto">
-            <h3 className="trispace intro">Hello! 👋 My name is</h3>
-            <h1 className={` ${data ? "text-light" : "text-dark"} `}>
+            <h3 className={` ${data ? "textColor-dark" : "text-dark"} trispace intro`}>Hello! 👋 My name is</h3>
+            <h1 className={` ${data ? "textColor-dark" : "text-dark"} `}>
               PAVITHRAN
             </h1>
 
@@ -33,7 +33,7 @@ function Home({ data }) {
             </div>
             <h6
               className={` ${
-                data ? "text-light" : "text-dark"
+                data ? "textColor-dark" : "text-dark"
               } trispace quote mt-2`}
             >
               A self-taught developer with an interest in Computer Science.
@@ -41,14 +41,14 @@ function Home({ data }) {
             <div className="mt-lg-3 mt-auto fs-1 icons">
               <FaGithub
                className={`github`}
-                color={` ${data ? "white" : "black"} `}
+                color={` ${data ? "#a2a1a6" : "black"} `}
                 onClick={() =>
                   window.open("https://github.com/PavithranBaskaran", "_blank")
                 }
               />{" "}
               <FaLinkedin
                 className={`linkedin`}
-                color={` ${data ? "white" : "black"} `}
+                color={` ${data ? "#a2a1a6" : "black"} `}
                 onClick={() =>
                   window.open("https://www.linkedin.com/in/pavithran-b-8026071a3/", "_blank")
                 }
@@ -56,7 +56,7 @@ function Home({ data }) {
               
             <SiGmail
                 className={`gmail`}
-                color={` ${data ? "white" : "black"} `}
+                color={` ${data ? "#a2a1a6" : "black"} `}
                 onClick={() =>
                   window.open("mailto:vktpavi@gmail.com", "_blank")
                 }

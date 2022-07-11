@@ -5,17 +5,19 @@ import { FaLinkedin } from "react-icons/fa";
 import { ImWhatsapp } from "react-icons/im";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-function Contact() {
+function Contact({ data }) {
   useEffect(()=>{
     AOS.init({delay: 800});
   },[])
   return (
     <>
       <section className="m-lg-5 " id="contact">
-        <h1 className="fingerpaint about-head">Contact me</h1>
+        <h1 className={`fingerpaint about-head ${
+            data ? "textColor-dark" : "text-dark"
+          }`}>Contact me</h1>
         <div data-aos="fade-right" class="container-fluid px-4 mt-5">
-          <div class="row pb-5  gx-5 gy-4">
-            <div  class="col">
+          <div class="row pb-5 trispace gx-5 gy-4">
+            <div  class="col contact">
               <div 
                 style={{ backgroundColor: "#c11625" }}
                 className="contact-pill p-2 border rounded-pill d-flex align-center   border-danger"
@@ -33,7 +35,7 @@ function Contact() {
                 </div>
               </div>
             </div>
-            <div  className="col">
+            <div  className="col contact">
               <div 
                 style={{ backgroundColor: "#128C7E" }}
                 className="contact-pill p-2 border rounded-pill d-flex align-items-center justify-center border-success"
@@ -48,7 +50,7 @@ function Contact() {
                 </div>
               </div>
             </div>
-            <div  className="col">
+            <div  className="col contact">
               <div
                 style={{ backgroundColor: "#128C7E" }}
                 className="contact-pill p-2 border rounded-pill d-flex align-items-center justify-center border-success"
@@ -66,7 +68,7 @@ function Contact() {
                 </div>
               </div>
             </div>
-            <div  className="col">
+            <div  className="col contact">
               <div
                 style={{ backgroundColor: "#0a66c2" }}
                 className="contact-pill p-2 border rounded-pill d-flex align-items-center justify-center border-primary "

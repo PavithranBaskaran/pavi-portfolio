@@ -6,6 +6,20 @@
   font-family: "Finger Paint", cursive;
   letter-spacing: 5px;
 }
+.trigger{
+  font-size: 45px;
+  cursor: pointer;
+}
+
+/* font color */
+
+.bgColor-dark{
+  background-color: #22222b;
+}
+
+.textColor-dark{
+  color: #a2a1a6;
+}
 .navbar{
   box-shadow: 0 3px 6px rgba(var(--bs-secondary-rgb),.2);
 }
@@ -98,12 +112,11 @@ nav li {
 }
 
 .skill {
-  /* display: flex; */
+  
   flex-direction: row;
   flex-wrap: wrap;
   padding: 1em;
-  /* padding-left: 3em;
-  padding-top: 3.5em; */
+ 
 }
 
 .skill-cintainer{
@@ -121,6 +134,7 @@ nav li {
   border-radius: 10px;
   
 }
+
 .profile{
 padding: 0px;
 }
@@ -130,8 +144,11 @@ padding: 0px;
   width: 20rem;
   color: white;
   font-weight: 500;
+  
 }
-
+.contact{
+  cursor: pointer;
+}
 .inside{
   background-color: whitesmoke;
 }
@@ -254,3 +271,22 @@ padding: 0px;
 }
 
 
+/* animation */
+.bounce-in   {
+  animation: bounce-in 2s ease infinite;
+}
+@keyframes bounce-in {
+  0% {
+    opacity: 0;
+    transform: scale(.3);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  70% { transform: scale(.9); }
+  100% { transform: scale(1); }
+}
+.bounce-in:hover   {
+  animation: none;
+}
