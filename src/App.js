@@ -57,7 +57,7 @@ function App() {
           autoplay
           loop
           src="https://assets7.lottiefiles.com/packages/lf20_no6msz4f.json"
-          style={{ height: "800px", width: "800px" }}
+          style={{ height: "500px", width: "300px" }}
           controls={true}
         ></Player>
       ) : (
