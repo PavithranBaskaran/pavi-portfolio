@@ -80,51 +80,7 @@ function About({ data }) {
           programming and real world projects. Later, I learned MERN Stack From
           Guvi and built an Website using React JS, Node, Express Js, MongoDB.
         </p>
-        <h1
-          className={`mt-5 fingerpaint about-head ${
-            data ? "textColor-dark" : ""
-          }`}
-        >
-          Experience
-        </h1>
-        <div 
-        data-aos="fade-right"
-        className="container d-flex align-items-center justify-content-center">
-          <div className="row experience ">
-            <div className="col  ">
-              <div className="experience-box d-flex justify-content-center flex-column align-items-center ">
-                <img src={infy} className="infy" />
-                <h3
-                  className={`w-lg-75 w-sm-100  ms-lg-5 ms-4 mt-4 context trispace  ${
-                    data ? "textColor-dark" : ""
-                  } experience-title`}
-                >
-                  {" "}
-                  {`Operations Executive`}
-                </h3>
-                <h4
-                  className={`w-lg-75 w-sm-100  ms-lg-5 ms-4 mt-4 context trispace  ${
-                    data ? "textColor-dark" : ""
-                  } experience-time`}
-                >
-                
-                  Dec2020 to Apr2022
-                </h4>
-                
-                <p
-                  className={`w-lg-75 w-sm-100  ms-lg-5 ms-4 mt-4 context trispace fs-6 ${
-                    data ? "textColor-dark" : ""
-                  } experience-content`}
-                >
-                  Worked as a Production Support in a Bank Project.
-                  Done daily HealthChecks of server.
-                  Deployed Production and QA server updates.
-                  Gained some knowledge about AWS.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
+        
       </section>
     </>
   );

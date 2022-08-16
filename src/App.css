@@ -96,27 +96,7 @@ nav li {
   font-size: larger;
 }
 
-.infy{
-  width: 100px;
-  place-content: center;
-}
 
-.experience{
-  width: 600px;
-  height: 300px;
-  text-align: justify;
-}
-
-.experience-box{
-  width: 500px;
-}
-.experience-title{
-  padding: 0px !important;
-  margin: 0px !important;
-  }
-  .experience-time{
-    font-weight: 300;
-  }
 /* skill page */
 
 
@@ -226,25 +206,7 @@ padding: 0px;
     line-height: 30px;
     margin-left: 35px;
   }
-  .experience-box{
-    width: 350px;
-  }
-  .experience-title{
-    padding: 0px !important;
-    margin: 0px !important;
-    font-size: large;
-  }
-  .experience-time{
-    padding: 0px !important;
-    margin: 0px !important;
-    font-size: 15px;
-  }
-  .experience-content{
-    padding-left: 4px !important;
-    padding-right: 4px !important;
-    padding: 0px !important;
-    margin: 0px !important;
-  }
+  
   /* skill page */
    /* skill page */
 
