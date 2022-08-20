@@ -11,6 +11,7 @@ import Home from "./Home";
 import About from "./About";
 import Skills from "./Skills";
 import Contact from "./Contact";
+import Project from "./Project";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -97,12 +98,11 @@ function App() {
             <div className=" d-flex justify-content-center">
               <hr className=" border opacity-50 mt-5 line " />
             </div>
-            {/* <section className="" id="project">Project
-        <h1>IN PROGRESS</h1></section> */}
+            <Project data={display}/>
             {/* Horizontal Line */}
-            {/* <div className=" d-flex justify-content-center">
+            <div className=" d-flex justify-content-center">
         <hr className=" border opacity-50 mt-5 line "/>
-        </div> */}
+        </div>
             <Contact data={display} />
           </section>
         </>

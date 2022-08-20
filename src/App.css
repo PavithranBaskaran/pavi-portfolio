@@ -141,6 +141,14 @@ nav li {
 padding: 0px;
 }
 
+
+/* project */
+
+.project-dark{
+  background-color: #22222b;
+  color: #c71610;
+}
+
 /* contact */
 .contact-pill{
   width: 20rem;
