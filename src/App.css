@@ -1,3 +1,8 @@
+html,
+body {
+  overflow-x: hidden;
+}
+
 .trispace {
   font-family: "Trispace", sans-serif;
 }
@@ -6,22 +11,22 @@
   font-family: "Finger Paint", cursive;
   letter-spacing: 5px;
 }
-.trigger{
+.trigger {
   font-size: 45px;
   cursor: pointer;
 }
 
 /* font color */
 
-.bgColor-dark{
+.bgColor-dark {
   background-color: #22222b;
 }
 
-.textColor-dark{
+.textColor-dark {
   color: #a2a1a6;
 }
-.navbar{
-  box-shadow: 0 3px 6px rgba(var(--bs-secondary-rgb),.2);
+.navbar {
+  box-shadow: 0 3px 6px rgba(var(--bs-secondary-rgb), 0.2);
 }
 
 nav li {
@@ -36,7 +41,7 @@ nav li {
 }
 
 .line {
-  width: 1800px;
+  width: 2500px;
 }
 
 .icons :hover {
@@ -74,33 +79,28 @@ nav li {
   height: 200px;
 }
 
-
 /* about-page */
 
-.about-head{
+.about-head {
   letter-spacing: 1px;
 }
-.about-title{
+.about-title {
   color: #1e46c2;
 }
 
-.context{
+.context {
   font-size: larger;
   font-weight: 500;
 }
 
-.list{
+.list {
   list-style: none;
   margin-left: 70px;
   line-height: 70px;
   font-size: larger;
 }
 
-
 /* skill page */
-
-
-
 
 .section-title {
   margin: -5px 0 15px 0;
@@ -110,18 +110,15 @@ nav li {
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
   color: #fff;
-  
 }
 
 .skill {
-  
   flex-direction: row;
   flex-wrap: wrap;
   padding: 1em;
- 
 }
 
-.skill-cintainer{
+.skill-cintainer {
   display: flex;
   width: 10rem;
   font-size: 1rem;
@@ -134,38 +131,35 @@ nav li {
   background-color: rgb(53, 49, 49);
   overflow: hidden;
   border-radius: 10px;
-  
 }
 
-.profile{
-padding: 0px;
+.profile {
+  padding: 0px;
 }
-
 
 /* project */
 
-.project-dark{
+.project-dark {
   background-color: #22222b;
   color: #c71610;
 }
 
 /* contact */
-.contact-pill{
+.contact-pill {
   width: 20rem;
   color: white;
   font-weight: 500;
-  
 }
-.contact{
+.contact {
   cursor: pointer;
 }
-.inside{
+.inside {
   background-color: whitesmoke;
 }
 .hint {
-  font-size:20px  !important;
+  font-size: 20px !important;
 }
-.hint-icon{
+.hint-icon {
   font-size: 70px;
 }
 
@@ -175,7 +169,7 @@ padding: 0px;
     text-align: center;
     height: 550px;
   }
-  .intro{
+  .intro {
     font-size: large;
     letter-spacing: normal;
   }
@@ -188,52 +182,52 @@ padding: 0px;
   }
 
   /* about-page */
-  .about-head{
+  .about-head {
     font-size: 20px;
-    margin-left:20px  ;
+    margin-left: 20px;
     margin-top: 20px;
   }
 
-  .about-title{
+  .about-title {
     font-size: 15px;
     letter-spacing: normal;
   }
 
-  .context{
+  .context {
     font-size: small;
     font-weight: 400;
     line-height: 1.5;
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
     margin-top: 0.5rem;
     padding: 1em;
     word-spacing: 2px;
     text-align: justify;
   }
-  .list{
+  .list {
     font-size: small;
     line-height: 30px;
     margin-left: 35px;
   }
-  
-  /* skill page */
-   /* skill page */
 
-   /* contact */
-   .contact-pill{
+  /* skill page */
+  /* skill page */
+
+  /* contact */
+  .contact-pill {
     width: 15rem;
-    
+
     font-weight: 500;
   }
-  .hint{
+  .hint {
     font-size: 15px !important;
   }
-  .hint-icon{
+  .hint-icon {
     font-size: 50px;
   }
 }
 @media (max-width: 1230px) {
-  .skill-icon{
-    margin-top:30px !important;
+  .skill-icon {
+    margin-top: 30px !important;
     row-gap: 30px;
     letter-spacing: -2px;
     display: grid !important;
@@ -249,7 +243,6 @@ padding: 0px;
   }
 }
 @media (max-width: 576px) {
-  
   /* new */
   .skill {
     display: flex !important;
@@ -257,9 +250,9 @@ padding: 0px;
     padding: 0 !important;
     padding-top: 1em !important;
   }
-  .skill-cintainer{
+  .skill-cintainer {
     display: flex;
-    max-width:max-content !important;
+    max-width: max-content !important;
     width: 5rem;
     font-size: small !important;
     margin: 0.5rem;
@@ -271,33 +264,35 @@ padding: 0px;
     background-color: rgb(53, 49, 49);
     overflow: hidden;
     border-radius: 10px;
-    
   }
   .section-title {
-    width:max-content !important; 
+    width: max-content !important;
   }
-  .pad{
+  .pad {
     padding: 0px !important;
   }
 }
 
-
 /* animation */
-.bounce-in   {
+.bounce-in {
   animation: bounce-in 2s ease infinite;
 }
 @keyframes bounce-in {
   0% {
     opacity: 0;
-    transform: scale(.3);
+    transform: scale(0.3);
   }
   50% {
     opacity: 1;
     transform: scale(1.05);
   }
-  70% { transform: scale(.9); }
-  100% { transform: scale(1); }
+  70% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
-.bounce-in:hover   {
+.bounce-in:hover {
   animation: none;
 }
