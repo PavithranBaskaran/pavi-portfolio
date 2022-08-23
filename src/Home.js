@@ -18,6 +18,7 @@ function Home({ data }) {
         <div className="row row-cols-lg-2 row-cols-sm-1 mt-md-5 mt-5">
           <div
             data-aos="fade-right"
+            data-aos-once="true"
             className="name fingerpaint mw-100 m-auto col m-sm-auto"
           >
             <h3
@@ -86,11 +87,16 @@ function Home({ data }) {
           </div>
           <div
             data-aos="fade-left"
+            data-aos-once="true"
             className="mw-50 m-auto profile col d-lg-inline d-md-none d-none  "
           >
             <Profile />
           </div>
-          <div data-aos="fade-left" className="d-lg-none d-md-block profile2">
+          <div
+            data-aos="fade-left"
+            data-aos-once="true"
+            className="d-lg-none d-md-block profile2"
+          >
             <Profile2 />
           </div>
         </div>

@@ -15,7 +15,7 @@ function Contact({ data }) {
         <h1 className={`fingerpaint about-head ${
             data ? "textColor-dark" : "text-dark"
           }`}>Contact me</h1>
-        <div data-aos="fade-right" class="container-fluid px-4 mt-5">
+        <div data-aos="fade-right" data-aos-once="true" class="container-fluid px-4 mt-5">
           <div class="row pb-5 trispace gx-5 gy-4">
             <div  class="col contact">
               <div 

@@ -1,13 +1,13 @@
 import React, { useEffect } from "react";
 import { Player } from "@lottiefiles/react-lottie-player";
 import { project, projects } from "./data";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function Project({ data }) {
-    useEffect(()=>{
-        AOS.init({delay: 800});
-      },[])
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <>
       <section className="m-lg-5 about " id="about">
@@ -18,11 +18,19 @@ function Project({ data }) {
         </h1>
 
         <div className="container ">
-          <div className="row">
+          <div className="row" data-aos="fade-down"
+                  data-aos-once="true">
             {projects.map((project) => {
               return (
-                <div className={`${data ? "textColor-dark" : ""}  col m-4`} data-aos="flip-down">
-                  <div className={`${data ? "bg-transparent" : ""} card`} style={{ width: "18rem" }}>
+                <div
+                  className={`${data ? "textColor-dark" : ""}  col m-4`}
+                  // data-aos="fade-down"
+                  data-aos-once="true"
+                >
+                  <div
+                    className={`${data ? "bg-transparent" : ""} card`}
+                    style={{ width: "18rem" }}
+                  >
                     <Player
                       className="player"
                       autoplay
@@ -38,10 +46,20 @@ function Project({ data }) {
                         Some quick example text to build on the card title and
                         make up the bulk of the card's content.
                       </p> */}
-                      <a href="#" class={`${data ? "textColor-dark" : ""} btn btn-secondary m-2`}>
+                      <a
+                        href="#"
+                        class={`${
+                          data ? "textColor-dark" : ""
+                        } btn btn-secondary m-2`}
+                      >
                         View Project
                       </a>
-                      <a href="#" class={`${data ? "textColor-dark" : ""} btn btn-secondary m-2`}>
+                      <a
+                        href="#"
+                        class={`${
+                          data ? "textColor-dark" : ""
+                        } btn btn-secondary m-2`}
+                      >
                         View Code
                       </a>
                     </div>

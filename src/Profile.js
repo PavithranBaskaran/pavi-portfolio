@@ -15,7 +15,7 @@ import { Player } from '@lottiefiles/react-lottie-player';
               loop={true}
               controls={true}
               src="https://assets10.lottiefiles.com/packages/lf20_z3pnisgt.json"
-              style={{ height: '800px', width: '800px' }}
+              style={{ height: '650px', width: '630px' }}
             ></Player>
           );
         }
