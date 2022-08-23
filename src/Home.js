@@ -90,7 +90,7 @@ function Home({ data }) {
             data-aos-once="true"
             className="mw-50 m-auto profile col d-lg-inline d-md-none d-none  "
           >
-            <Profile />
+            <Profile className="control" />
           </div>
           <div
             data-aos="fade-left"

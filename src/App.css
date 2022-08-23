@@ -1,4 +1,4 @@
-html,
+
 body {
   overflow-x: hidden;
 }
@@ -60,6 +60,7 @@ nav li {
 }
 #home {
   height: 800px;
+  margin-top: 130px;
 }
 
 #about {
@@ -135,6 +136,10 @@ nav li {
 
 .profile {
   padding: 0px;
+  
+}
+.control{
+  overflow: hidden !important;
 }
 
 /* project */
