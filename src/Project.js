@@ -18,8 +18,7 @@ function Project({ data }) {
         </h1>
 
         <div className="container ">
-          <div className="row" data-aos="fade-down"
-                  data-aos-once="true">
+          <div className="row" data-aos="fade-down" data-aos-once="true">
             {projects.map((project) => {
               return (
                 <div
@@ -42,26 +41,29 @@ function Project({ data }) {
 
                     <div class="card-body">
                       <h5 class="card-title">{project.projectName}</h5>
-                      {/* <p class="card-text">
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
-                      </p> */}
+                      <p class="card-text">{project.desc}</p>
                       <a
-                        href="#"
+                        href={project.project}
+                        target="_blank"
                         class={`${
                           data ? "textColor-dark" : ""
                         } btn btn-secondary m-2`}
                       >
                         View Project
                       </a>
-                      <a
-                        href="#"
-                        class={`${
-                          data ? "textColor-dark" : ""
-                        } btn btn-secondary m-2`}
-                      >
-                        View Code
-                      </a>
+                      {project.code.map((item) => {
+                        return (
+                          <a
+                            href={item.source}
+                            target="_blank"
+                            class={`${
+                              data ? "textColor-dark" : ""
+                            } btn btn-secondary m-2`}
+                          >
+                           {item.title}
+                          </a>
+                        );
+                      })}
                     </div>
                   </div>
                 </div>
