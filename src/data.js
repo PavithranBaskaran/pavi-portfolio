@@ -3,7 +3,7 @@ export const projects = [
     id: 1,
     projectName: `React Infinite Scroll`,
     src: "https://assets10.lottiefiles.com/packages/lf20_cdvdgap1.json",
-    desc: "Done Using React, Bootstrap and Unsplash API",
+    desc: "React / Bootstrap / Unsplash API",
     project: "https://pavi-react-infinite-scroll.netlify.app/",
     code: [
       {
@@ -16,7 +16,7 @@ export const projects = [
     id: 2,
     projectName: "Task Submission Portal",
     src: "https://assets8.lottiefiles.com/packages/lf20_xcpxkfnu.json",
-    desc: "Done Using React, NodeJS, MongoDB, Styled Components ",
+    desc: "React / NodeJS / MongoDB / Styled Components ",
     project: "https://pavi-student-task-submission.vercel.app/",
 
     code: [
@@ -35,7 +35,7 @@ export const projects = [
     id: 3,
     projectName: "URL Shortener",
     src: "https://assets7.lottiefiles.com/private_files/lf30_uqiitjs4.json",
-    desc: "Done Using React, NodeJS, MongoDB, Bootstrap",
+    desc: "React / NodeJS / MongoDB / Bootstrap",
     project: "https://pavi-shortener.vercel.app/",
 
     code: [

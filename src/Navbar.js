@@ -57,7 +57,7 @@ function Navbar({data}) {
                     data ? "text-light" : "text-dark"
                   } `}
                  href='/about'
-                 onClick={()=>window.scrollTo(0,800)}
+                 onClick={()=>window.scrollTo(0,900)}
                 >
                  About 
                 </li>
@@ -66,7 +66,7 @@ function Navbar({data}) {
                     data ? "text-light" : "text-dark"
                   } `}
                   action="#skills"
-                  onClick={()=>window.scrollTo(800,1800)}
+                  onClick={()=>window.scrollTo(900,2000)}
                 >
                   Skills
                 </li>
@@ -75,7 +75,7 @@ function Navbar({data}) {
                     data ? "text-light" : "text-dark"
                   } `}
                   action="#project"
-                  onClick={()=>window.scrollTo(1800,2400)}
+                  onClick={()=>window.scrollTo(2000,2800)}
                 >
                   Project
                 </li>
@@ -84,7 +84,7 @@ function Navbar({data}) {
                     data ? "text-light" : "text-dark"
                   } `}
                   action="#contact"
-                  onClick={()=>window.scrollTo(2400,3700)}
+                  onClick={()=>window.scrollTo(2800,3700)}
                 >
                   Contact
                 </li>
