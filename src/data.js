@@ -22,80 +22,72 @@ export const projects = [
     code: [
       {
         title: "Frontend Code",
-        source: "https://github.com/PavithranBaskaran/student-task-submission-frontend ",
+        source:
+          "https://github.com/PavithranBaskaran/student-task-submission-frontend ",
       },
 
       {
         title: "Backend Code",
-        source: "https://github.com/PavithranBaskaran/student-task-submission-backend ",
+        source:
+          "https://github.com/PavithranBaskaran/student-task-submission-backend ",
       },
     ],
   },
   {
     id: 3,
-    projectName: "URL Shortener",
-    src: "https://assets7.lottiefiles.com/private_files/lf30_uqiitjs4.json",
-    desc: "React / NodeJS / MongoDB / Bootstrap",
-    project: "https://pavi-shortener.vercel.app/",
+    projectName: "Redux Post",
+    src: "https://assets7.lottiefiles.com/private_files/lf30_noq8b0i9.json",
+    desc: "React / Redux / NodeJS / MongoDB  ",
+    project: "https://redux-posts-frontend.vercel.app/",
 
     code: [
       {
         title: "Frontend Code",
-        source: "https://github.com/PavithranBaskaran/url-shortener-frontend",
+        source: "https://github.com/PavithranBaskaran/redux-posts-frontend",
       },
 
       {
         title: "Backend Code",
-        source: "https://github.com/PavithranBaskaran/url-shortener-backend",
+        source: "https://github.com/PavithranBaskaran/redux-post-backend",
       },
     ],
   },
-//   {
-//     id: 4,
-//     projectName: "Project 4",
-//     src: "https://assets8.lottiefiles.com/private_files/lf30_vjfa6hkx.json",
-//     code: [
-//       {
-//         title: "Frontend Code",
-//         source: "https://github.com/PavithranBaskaran/full-stack-assignment ",
-//       },
+  {
+    id: 4,
+    projectName: "Simple Redux Ecommerce",
+    src: "https://assets3.lottiefiles.com/packages/lf20_pm5qdb4j.json",
+    desc: "React / Redux / NodeJS / MongoDB  ",
+    project: "https://pavi-redux-ecommerce.vercel.app/",
 
-//       {
-//         title: "Frontend Code",
-//         source: "https://github.com/PavithranBaskaran/full-stack-assignment ",
-//       },
-//     ],
-//   },
-//   {
-//     id: 5,
-//     projectName: "Project 5",
-//     src: "https://assets1.lottiefiles.com/private_files/lf30_F6EtR7.json",
-//     code: [
-//       {
-//         title: "Frontend Code",
-//         source: "https://github.com/PavithranBaskaran/full-stack-assignment ",
-//       },
+    code: [
+      {
+        title: "Frontend Code",
+        source: "https://github.com/PavithranBaskaran/redux-ecommerce-frontend",
+      },
 
-//       {
-//         title: "Frontend Code",
-//         source: "https://github.com/PavithranBaskaran/full-stack-assignment ",
-//       },
-//     ],
-//   },
-//   {
-//     id: 6,
-//     projectName: "Project 6",
-//     src: "https://assets1.lottiefiles.com/private_files/lf30_F6EtR7.json",
-//     code: [
-//       {
-//         title: "Frontend Code",
-//         source: "https://github.com/PavithranBaskaran/full-stack-assignment ",
-//       },
+      {
+        title: "Backend Code",
+        source: "https://github.com/PavithranBaskaran/redux-ecommerce-backend",
+      },
+    ],
+  },
+  {
+    id: 5,
+    projectName: "Simple Ticket Booking Site",
+    src: "https://assets5.lottiefiles.com/packages/lf20_tllv4ohj.json",
+    desc: "React / NodeJS / MongoDB /Bootstrap ",
+    project: "https://guvi-hackaton2-frontend.vercel.app/",
 
-//       {
-//         title: "Frontend Code",
-//         source: "https://github.com/PavithranBaskaran/full-stack-assignment ",
-//       },
-//     ],
-//   },
+    code: [
+      {
+        title: "Frontend Code",
+        source: "https://github.com/PavithranBaskaran/guvi-hackaton2-frontend",
+      },
+
+      {
+        title: "Backend Code",
+        source: "https://github.com/PavithranBaskaran/guvi-hackaton2-backend",
+      },
+    ],
+  },
 ];
