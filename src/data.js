@@ -1,5 +1,18 @@
 export const projects = [
   {
+    id: 6,
+    projectName: `Toll Management System`,
+    src: "https://assets10.lottiefiles.com/packages/lf20_9auNxk.json",
+    desc: "React / JavaScript / HTML / CSS / LocalStorage",
+    project: "https://pavi-toll-management-system.vercel.app/",
+    code: [
+      {
+        title: "Frontend Code",
+        source: "https://github.com/PavithranBaskaran/Toll-Management-System ",
+      },
+    ],
+  },
+  {
     id: 1,
     projectName: `React Infinite Scroll`,
     src: "https://assets10.lottiefiles.com/packages/lf20_cdvdgap1.json",
