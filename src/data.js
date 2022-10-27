@@ -48,20 +48,22 @@ export const projects = [
   },
   {
     id: 3,
-    projectName: "Redux Post",
-    src: "https://assets7.lottiefiles.com/private_files/lf30_noq8b0i9.json",
-    desc: "React / Redux / NodeJS / MongoDB  ",
-    project: "https://redux-posts-frontend.vercel.app/",
+    projectName: "Flight Ticket Booking",
+    src: "https://assets6.lottiefiles.com/private_files/lf30_dy2xdidy.json",
+    desc: "React / Bootstrap / NodeJS / MongoDB  ",
+    project: "https://pavi-flight-booking-frontend.vercel.app/",
 
     code: [
       {
         title: "Frontend Code",
-        source: "https://github.com/PavithranBaskaran/redux-posts-frontend",
+        source:
+          "https://github.com/PavithranBaskaran/pavi-flight-booking-frontend",
       },
 
       {
         title: "Backend Code",
-        source: "https://github.com/PavithranBaskaran/redux-post-backend",
+        source:
+          "https://github.com/PavithranBaskaran/pavi-flight-booking-backend",
       },
     ],
   },
